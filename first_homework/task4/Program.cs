@@ -23,4 +23,4 @@ if (numberC > max)
     max = numberC;
 }
 
-Console.Write("max = " + max);
+Console.WriteLine("max = " + max);
