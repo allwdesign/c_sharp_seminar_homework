@@ -32,7 +32,7 @@ string CheckForNumber(int number)
     //2-significant number 
     if (number > 19) number = number % 10;
 
-    //1 digit - 0, от 5 до 19
+    //0 или от 5 до 19
     if ((number <= 19 && number >= 5) || (number == 0)) end = "ов";
     
     //от 2 до 4 включительно
@@ -48,7 +48,6 @@ string CheckForNumber(int number)
 string GetСorrectPlural(int number)
 {
     string endString = string.Empty;
-    //от 0 до 19
     endString = CheckForNumber(number);
     return endString;
 }
@@ -56,7 +55,6 @@ string GetСorrectPlural(int number)
 void PrintMessage(int number)
 {
     string word = "программист";
-    //string msg = string.Empty;
     string ending = GetСorrectPlural(number);
 
     Console.WriteLine($"{number} {word}{ending}");
