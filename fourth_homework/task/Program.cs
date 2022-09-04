@@ -49,38 +49,38 @@ void SortArray(int[] numbers)
     }
 }
 
-void ProgramCheck()
-{
-    Console.WriteLine("-----------------PROGRAM CHECK-------------------");
+// void ProgramCheck()
+// {
+//     Console.WriteLine("-----------------PROGRAM CHECK-------------------");
     
-    int[] testNums1 = new int[5]{61, -62, -3, 66, -78};
-    Console.WriteLine("---BEFORE SORTED---");
-    PrintArray(testNums1);
-    SortArray(testNums1);
-    Console.WriteLine("---AFTER SORTED---");
-    PrintArray(testNums1);
+//     int[] testNums1 = new int[5]{61, -62, -3, 66, -78};
+//     Console.WriteLine("---BEFORE SORTED---");
+//     PrintArray(testNums1);
+//     SortArray(testNums1);
+//     Console.WriteLine("---AFTER SORTED---");
+//     PrintArray(testNums1);
     
-    int[] testNums2 = new int[6]{-29, -62, -28, -31, -39, -56};
-    PrintArray(testNums2);
-    SortArray(testNums2);
-    Console.WriteLine("---AFTER SORTED---");
-    PrintArray(testNums2);
+//     int[] testNums2 = new int[6]{-29, -62, -28, -31, -39, -56};
+//     PrintArray(testNums2);
+//     SortArray(testNums2);
+//     Console.WriteLine("---AFTER SORTED---");
+//     PrintArray(testNums2);
 
-    int[] testNums3 = new int[8]{44, -91, -93, -18, -83, 84, -31, 47};
-    PrintArray(testNums3);
-    SortArray(testNums3);
-    Console.WriteLine("---AFTER SORTED---");
-    PrintArray(testNums3);
+//     int[] testNums3 = new int[8]{44, -91, -93, -18, -83, 84, -31, 47};
+//     PrintArray(testNums3);
+//     SortArray(testNums3);
+//     Console.WriteLine("---AFTER SORTED---");
+//     PrintArray(testNums3);
 
-    int[] testNums4 = new int[8]{44, -91, 84, -18, -83, 84, -31, 47};
-    PrintArray(testNums4);
-    SortArray(testNums4);
-    Console.WriteLine("---AFTER SORTED---");
-    PrintArray(testNums4);
+//     int[] testNums4 = new int[8]{44, -91, 84, -18, -83, 84, -31, 47};
+//     PrintArray(testNums4);
+//     SortArray(testNums4);
+//     Console.WriteLine("---AFTER SORTED---");
+//     PrintArray(testNums4);
     
-    Console.WriteLine("---------------END PROGRAM CHECK------------------\n");
-}
-ProgramCheck();
+//     Console.WriteLine("---------------END PROGRAM CHECK------------------\n");
+// }
+// ProgramCheck();
 try
 {
     
