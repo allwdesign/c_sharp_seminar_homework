@@ -7,6 +7,7 @@
 
 int Pow(int baseA, int exp)
 {
+    //We can call this “a raised to the power of n”
     if (exp<0) throw new ArgumentException("Exponent must be greater than zero!");
     
     int result = 1;
@@ -24,7 +25,7 @@ int a = Convert.ToInt32(Console.ReadLine());
 Console.Write("Enter the number N exponent: ");
 int n = Convert.ToInt32(Console.ReadLine());
 
-//We can call this “a raised to the power of n,” “x to the power of n,” or simply “x to the n.” Here, x is the base and n is the exponent or the power.
+
 try
 {
     int power = Pow(a, n);
