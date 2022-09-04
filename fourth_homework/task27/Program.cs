@@ -4,10 +4,6 @@
 //82 -> 10
 //9012 -> 12
 
-//n
-//sum
-//digit
-//
 // void ProgramCheck()
 // {
 //     Console.WriteLine("-----------------PROGRAM CHECK-------------------");
