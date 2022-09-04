@@ -81,15 +81,23 @@ void ProgramCheck()
     Console.WriteLine("---------------END PROGRAM CHECK------------------\n");
 }
 ProgramCheck();
+try
+{
+    
+    Console.Write("Enter N number ");
+    int num = Convert.ToInt32(Console.ReadLine());
+    int[] numbers = FillArray(num);
 
-Console.Write("Enter N number ");
-int num = Convert.ToInt32(Console.ReadLine());
-int[] numbers = FillArray(num);
+    Console.WriteLine("---BEFORE SORTED---");
+    PrintArray(numbers);
 
-Console.WriteLine("---BEFORE SORTED---");
-PrintArray(numbers);
+    SortArray(numbers);
 
-SortArray(numbers);
+    Console.WriteLine("---AFTER SORTED---");
+    PrintArray(numbers);
 
-Console.WriteLine("---AFTER SORTED---");
-PrintArray(numbers);
+}
+catch
+{
+    Console.WriteLine("Something went wrong!");
+}
