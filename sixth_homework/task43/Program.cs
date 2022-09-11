@@ -24,22 +24,28 @@ void GetPointOfIntersectionOfTwoLines(double b1, double k1, double b2, double k2
     }
 }
 
+try
+{
+    Console.WriteLine(
+        "To find the intersection point of two lines given by the equations " + 
+        "\n" + 
+        "y = k1 * x + b1 and y = k2 * x + b2.\n"); 
 
-Console.WriteLine(
-    "To find the intersection point of two lines given by the equations " + 
-    "\n" + 
-    "y = k1 * x + b1 and y = k2 * x + b2.\n"); 
+    Console.Write("Enter the integer value for b1: ");
+    double b1 = Convert.ToDouble(Console.ReadLine());
 
-Console.Write("Enter the value for b1: ");
-double b1 = Convert.ToDouble(Console.ReadLine());
+    Console.Write("Enter the integer value for k1: ");
+    double k1 = Convert.ToDouble(Console.ReadLine());
 
-Console.Write("Enter the value for k1: ");
-double k1 = Convert.ToDouble(Console.ReadLine());
+    Console.Write("Enter the integer value for b2: ");
+    double b2 = Convert.ToDouble(Console.ReadLine());
 
-Console.Write("Enter the value for b2: ");
-double b2 = Convert.ToDouble(Console.ReadLine());
+    Console.Write("Enter the integer value for k2: ");
+    double k2 = Convert.ToDouble(Console.ReadLine());
 
-Console.Write("Enter the value for k2: ");
-double k2 = Convert.ToDouble(Console.ReadLine());
-
-GetPointOfIntersectionOfTwoLines(b1, k1, b2, k2);
+    GetPointOfIntersectionOfTwoLines(b1, k1, b2, k2);
+}
+catch
+{
+    Console.WriteLine("You entered the wrong value! The value must be a number");
+}
