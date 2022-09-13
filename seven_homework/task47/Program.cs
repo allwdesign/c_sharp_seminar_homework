@@ -4,15 +4,15 @@
 //1 -3,3 8 -9,9
 //8 7,8 -7,1 9
 
-double[,] FillArray(int m, int n)
+double[,] FillArrayRandomDoubleNumbers(int row, int col)
 { 
     Random random = new Random();
     double randomDoubleNumber = 0.0;
     
-    double[,] array = new double [m,n];
-    for (int i=0;i<m;i++)
+    double[,] array = new double [row,col];
+    for (int i=0;i<row;i++)
     { 
-        for (int j=0;j<n;j++) 
+        for (int j=0;j<col;j++) 
         {
             //Generate random double number: 3.8
             randomDoubleNumber = Math.Round(
@@ -35,13 +35,37 @@ void PrintArray(double[,] table)
         } 
         Console.WriteLine(); 
     } 
-} 
+}
 
-Console.Write("Введите число строк: ");
-int m = Convert.ToInt32(Console.ReadLine());
+void ProgramCheck()
+{
+    Console.WriteLine("\n-----------------PROGRAM CHECK-------------------\n");
+    
+    // Two-dimensional array
+    double[,] testNumsArray2D = new double[3, 4] {
+                                                    { 0.5, 7, -2, -0.2 },
+                                                    { 1, -3.3, 8, -9.9 },
+                                                    { 8, 7.8, -7.1, 9 } };
+    PrintArray(testNumsArray2D);
+    
+    Console.WriteLine("\n---------------END PROGRAM CHECK------------------\n");
+}
+ProgramCheck();
 
-Console.Write("Введите число столбцов: ");
-int n = Convert.ToInt32(Console.ReadLine());
+try
+{
+    Console.Write("Enter the number of rows in the array: ");
+    int m = Convert.ToInt32(Console.ReadLine());
 
-double[,] mas = FillArray(m,n); 
-PrintArray(mas);
+    Console.Write("Enter the number of columns in the array: ");
+    int n = Convert.ToInt32(Console.ReadLine());
+
+    double[,] array = FillArrayRandomDoubleNumbers(m,n); 
+    Console.WriteLine();
+    PrintArray(array);
+}
+catch
+{
+    Console.WriteLine(
+        "You entered the wrong value! The value must be a integer number");
+}
