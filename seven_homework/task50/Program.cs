@@ -75,13 +75,13 @@ int[] ConvertStringsToNumbers(string[] stringNumbers)
 string[] ParseUserInput()
 {
     string[] stringNumbersArray = new string[2];
-    string stringWithNumbers = string.Empty;
+    // string stringWithNumbers = string.Empty;
     
     Console.Write(
             "Enter the position of an element in a 2D " +
             "array separated by a space: ");
         
-    stringWithNumbers = Console.ReadLine();
+    string? stringWithNumbers = Console.ReadLine();
     
     if (stringWithNumbers is null) throw new ArgumentNullException();
     
