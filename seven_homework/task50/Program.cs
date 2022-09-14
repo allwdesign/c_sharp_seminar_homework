@@ -75,12 +75,14 @@ int[] ConvertStringsToNumbers(string[] stringNumbers)
 string[] ParseUserInput()
 {
     string[] stringNumbersArray = new string[2];
-    // string stringWithNumbers = string.Empty;
-    
+        
     Console.Write(
             "Enter the position of an element in a 2D " +
             "array separated by a space: ");
-        
+    
+    //Without ? can be CS8600 warning: Console.ReadLine() 
+    //Return: next line characters from input or null 
+    //But: string variable does not allow a value null!
     string? stringWithNumbers = Console.ReadLine();
     
     if (stringWithNumbers is null) throw new ArgumentNullException();
