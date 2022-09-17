@@ -28,20 +28,14 @@ int[,] MultiplyMatrices(int[,] matrixA, int[,] matrixB)
     
     for (int i = 0; i < matrixA.GetLength(0); i++)
     {
-        Console.WriteLine($"I: {i}");
-        
         for (int j = 0; j < matrixB.GetLength(1); j++)
         {
             int sum = 0;
             for (int k = 0; k < matrixA.GetLength(1); k++)
             {    
-                Console.WriteLine($"matrixA[{i},{k}]: {matrixA[i,k]}");
-                Console.WriteLine($"matrixB[{k},{j}]: {matrixB[k,j]}");
-            
                 sum += matrixA[i,k] * matrixB[k,j];
             }
             multiplicationResult[i,j] = sum;
-            Console.WriteLine($"multiplicationResult[{i},{j}]: {multiplicationResult[i,j]}");
         }
     }
     return multiplicationResult;
